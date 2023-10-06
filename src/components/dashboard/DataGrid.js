@@ -50,7 +50,7 @@ const DataGrid = () => {
     };
 
     return (
-        <Box style={{ width: '82.2%', paddingBottom: '20px', margin: '20px auto auto auto' }} >
+        <Box style={{ width: '82.2%', paddingBottom: '20px', margin: '20px auto auto auto', overflowX: 'auto' }} >
             <Paper style={{
                 display: 'flex',
                 flexDirection: 'row',

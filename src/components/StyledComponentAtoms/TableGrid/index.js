@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // Modal atoms
 // Styled components for table elements
 export const TableWrapper = styled.div`
-  overflow-x: auto;
+
 `;
 
 export const Table = styled.table`

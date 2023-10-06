@@ -33,11 +33,18 @@ export const RightSection = styled.div`
   gap: 24px;
 `;
 
-function giveSize(val) {
-  if (val.large) return '30px'
-  if (val.medium) return '22px'
-  if (val.small) return '24px'
-  if (val.xsmall) return '18px'
+function giveSize(val, min) {
+  if (min === 'min') {
+    if (val.large) return '20px'
+    if (val.medium) return '16px'
+    if (val.small) return '12px'
+    if (val.xsmall) return '10px'
+  } else {
+    if (val.large) return '30px'
+    if (val.medium) return '22px'
+    if (val.small) return '24px'
+    if (val.xsmall) return '18px'
+  }
 }
 
 
@@ -53,6 +60,10 @@ export const Typography = styled.p`
   text-decoration: ${(props) => (props.underline ? 'underline' : 'none')};
   cursor: ${(props) => (props.pointer ? 'pointer' : 'default')};
   text-align:  ${(props) => (props.start ? 'left' : 'center')};
+  
+  @media screen and (max-width: 1100px) {
+    font-size: ${(props) => giveSize(props, 'min')};
+  }
   `;
 
 // for Box
@@ -85,12 +96,18 @@ export const Button = styled.button`
     color: ${(props) => (props.colorcode ? '#fff' : '#1e633f')};
     background-color: ${(props) => (props.colorcode ? props.colorcode : '#fff')};
     cursor: ${(props) => (props.nopoint ? 'default' : 'pointer')};
+    
+    @media screen and (max-width: 1100px) {
+      font-size: 0.6rem;
+      padding: 4px 10px;
+  }
   `;
 
 export const VerticalLine = styled.div`
     height: 120px;
     width: 1.2px;
     background-color: rgba(0, 0, 0, 0.15);
+    margin: auto;
   `;
 
 export const HorizontalLine = styled.div`

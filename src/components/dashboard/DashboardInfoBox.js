@@ -51,7 +51,7 @@ const DashboardInfoBox = () => {
                 {
                     colNames.map((val, index) => (
                         <Paper key={index} style={{ height: '100%', display: 'flex' }} >
-                            <Paper style={{ flex: 1, marginLeft: 'clamp(0px, 30px, 40px)' }} >
+                            <Paper style={{ flex: 1, margin: 'clamp(0px, 30px, 40px)' }} >
                                 <Typography xsmall start style={{ fontSize: 'clamp(10px, 18px, 24px)' }} >{val?.title}</Typography>
                                 <Typography medium start style={{ fontWeight: 600, fontSize: 'clamp(12px, 22px, 30px)' }}>{val?.value}</Typography>
                             </Paper>
