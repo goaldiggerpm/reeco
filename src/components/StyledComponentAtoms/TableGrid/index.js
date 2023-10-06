@@ -44,7 +44,14 @@ padding: 4px;
 export const TableCell = styled.td`
   padding: 10px;
   border-bottom: 1px solid rgba(27, 31, 35, 0.33);
+  &:nth-child(1) { width: 5% ;}
+  &:nth-child(2) { width: 26% ;}
+  &:nth-child(3) { width: 15% ;}
+  &:nth-child(4) { max-width: 8% ;}
+  &:nth-child(5) { width: 8% ;}
+  &:nth-child(6) { width: 8% ;}
   &:last-child {
+    width: 30%;
   background-color: rgba(0, 0, 0, 0.08); 
 }
 `;

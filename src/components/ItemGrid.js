@@ -51,19 +51,21 @@ function DataTable({ columns, data, actionRowName, imgRowName, modalaction }) {
                             <TableRow key={rowIndex}>
                                 {headerVal.map((column, colIndex) => {
                                     if (column === imgRowName) return <TableCell><StyledImage large src={rowData[imgRowName]} alt='avocadoimg' /></TableCell>
-                                    else if (column === actionRowName) return <TableCell style={{ display: 'flex' }} key={colIndex} >
+                                    else if (column === actionRowName) return <TableCell style={{}} key={colIndex} >
                                         <Paper style={{ display: 'flex' }} >
-                                            {
-                                                rowData[column] === 'approved' ?
-                                                    <Button nopoint colorcode={'#3dca72'} disabled >Approved</Button>
-                                                    :
-                                                    <Button nopoint colorcode={'#f66d44'} disabled >Missing</Button>
-                                            }
-                                        </Paper>
-                                        <Paper style={{ marginLeft: '12%', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px' }} >
-                                            <StyledImage medium point src={checkimg} alt='checkimg' onClick={() => modalaction({ status: 'approved', col: rowIndex, data: rowData })} />
-                                            <StyledImage medium point src={wrongimg} alt='wrongimg' onClick={() => modalaction({ status: 'missing', col: rowIndex, data: rowData })} />
-                                            <Typography>Edit</Typography>
+                                            <Paper style={{}} >
+                                                {
+                                                    rowData[column] === 'approved' ?
+                                                        <Button nopoint colorcode={'#3dca72'} disabled >Approved</Button>
+                                                        :
+                                                        <Button nopoint colorcode={'#f66d44'} disabled >Missing</Button>
+                                                }
+                                            </Paper>
+                                            <Paper style={{ marginLeft: '12%', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px', height: 'auto' }} >
+                                                <StyledImage medium point src={checkimg} alt='checkimg' onClick={() => modalaction({ status: 'approved', col: rowIndex, data: rowData })} />
+                                                <StyledImage medium point src={wrongimg} alt='wrongimg' onClick={() => modalaction({ status: 'missing', col: rowIndex, data: rowData })} />
+                                                <Typography>Edit</Typography>
+                                            </Paper>
                                         </Paper>
                                     </TableCell>
                                     else return <TableCell key={colIndex}>{rowData[column]}</TableCell>
