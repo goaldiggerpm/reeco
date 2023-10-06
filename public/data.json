@@ -1,0 +1,56 @@
+[
+    {
+        "img": "/Avocado Hass.jpg",
+        "Product_name": "Chicken 1",
+        "Brand": "Hormel Black",
+        "Price": "$60.6",
+        "Quantity": "123",
+        "Total": "0",
+        "Status": "approved"
+    },
+    {
+        "img": "/Avocado Hass.jpg",
+        "Product_name": "Chicken 2",
+        "Brand": "Hormel Black",
+        "Price": "$60.6",
+        "Quantity": "123",
+        "Total": "0",
+        "Status": "missing"
+    },
+    {
+        "img": "/Avocado Hass.jpg",
+        "Product_name": "Chicken 3",
+        "Brand": "Hormel Black",
+        "Price": "$60.6",
+        "Quantity": "123",
+        "Total": "0",
+        "Status": "missing"
+    },
+    {
+        "img": "/Avocado Hass.jpg",
+        "Product_name": "Chicken 4",
+        "Brand": "Hormel Black",
+        "Price": "$60.6",
+        "Quantity": "123",
+        "Total": "0",
+        "Status": "approved"
+    },
+    {
+        "img": "/Avocado Hass.jpg",
+        "Product_name": "Chicken 5",
+        "Brand": "Hormel Black",
+        "Price": "$60.6",
+        "Quantity": "123",
+        "Total": "0",
+        "Status": "missing"
+    },
+    {
+        "img": "/Avocado Hass.jpg",
+        "Product_name": "Chicken 6",
+        "Brand": "Hormel Black",
+        "Price": "$60.6",
+        "Quantity": "123",
+        "Total": "0",
+        "Status": "approved"
+    }
+]
